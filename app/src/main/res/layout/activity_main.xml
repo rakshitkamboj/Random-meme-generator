@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/nextbuttonID"
+        android:layout_width="195dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@android:color/holo_purple"
+        android:onClick="nextMEME"
+        android:text="@string/next"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/memeimageView"
+        android:layout_width="399dp"
+        android:layout_height="515dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="110dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
+
+    <ProgressBar
+        android:id="@+id/progressBarID"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/memeimageView"
+        app:layout_constraintLeft_toLeftOf="@id/memeimageView"
+        app:layout_constraintRight_toRightOf="@id/memeimageView"
+        app:layout_constraintTop_toTopOf="@id/memeimageView"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="18dp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="201dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="9dp"
+
+        android:background="@color/colorAccent"
+        android:onClick="shareMEME"
+        android:text="@string/sharew"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextbuttonID"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memeimageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="405dp"
+        android:layout_height="518dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
